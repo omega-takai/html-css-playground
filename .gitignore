@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,nextjs
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,nextjs
+# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,nuxtjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,nuxtjs
 
 ### macOS ###
 # General
@@ -34,39 +34,12 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
-### NextJS ###
-# Dependencies
-/node_modules
-/.pnp
-.pnp.js
+### Nuxtjs ###
+# Nuxt build
+.nuxt
 
-# Testing
-/coverage
-
-# Next.js
-/.next/
-/out/
-
-# Production
-/build
-
-# Misc
-*.pem
-
-# Debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# Local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Vercel
-.vercel
+# Nuxt generate
+dist
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -94,4 +67,35 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,windows,nextjs
+# End of https://www.toptal.com/developers/gitignore/api/macos,windows,nuxtjs
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# nuxt.js build output
+.nuxt
+
+# Nuxt generate
+dist
