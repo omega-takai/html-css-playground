@@ -6,10 +6,18 @@
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
     "build": "parcel build --no-optimize",
-    "lint:style": "stylelint src/**/*.scss --fix --max-warnings 0"
+    "lint": "npm run lint:script && npm run lint:style",
+    "lint:fix": "npm run lint:script -- --fix && npm run lint:style -- --fix",
+    "lint:script": "eslint --ext .js .",
+    "lint:style": "stylelint src/**/*.scss"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
+    "eslint": "^8.23.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
     "parcel": "^2.7.0",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
