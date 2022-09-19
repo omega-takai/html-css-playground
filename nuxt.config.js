@@ -41,5 +41,28 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    extractCSS: {
+      ignoreOrder: true,
+    },
+    // minify
+    html: {
+      minify: {
+        minifyCSS: false,
+        minifyJS: false,
+      },
+    },
+  },
+  html: {
+    minify: {
+      minifyCSS: false,
+      minifyJS: false,
+    },
+  },
+
+  // generate: {
+  //   minify: {
+  //     minifyCSS: false,
+  //   },
+  // },
 }
