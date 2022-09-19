@@ -1,0 +1,18 @@
+{
+  "name": "my-project",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel --open",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "parcel build --no-optimize"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "the-new-css-reset": "^1.7.3"
+  }
+}
