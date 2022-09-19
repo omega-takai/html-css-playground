@@ -11,21 +11,21 @@ module.exports = {
     'stylelint-config-standard',
     'stylelint-config-recess-order',
     'stylelint-config-recommended-scss',
-    'stylelint-prettier/recommended',
+    'stylelint-prettier/recommended'
   ],
   rules: {
-    "prettier/prettier": [true, {"singleQuote": true, "tabWidth": 2}],
+    'prettier/prettier': [true, { singleQuote: true, tabWidth: 2 }],
     'scss/at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['value'],
-      },
+        ignoreAtRules: ['value']
+      }
     ],
     'scss/dollar-variable-pattern': lowerCamelCase,
     'scss/percent-placeholder-pattern': lowerCamelCase,
     'scss/at-function-pattern': lowerCamelCase,
-    'scss/at-mixin-pattern': lowerCamelCase,
+    'scss/at-mixin-pattern': lowerCamelCase
   },
   // stylelint ignores the node_modules directory by default.
-  ignoreFiles: ['**/*.{js,ts}'],
+  ignoreFiles: ['**/*.{js,ts}']
 }
