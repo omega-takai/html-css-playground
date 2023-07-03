@@ -22,7 +22,7 @@
     "posthtml": "0.16.6",
     "posthtml-doctype": "1.1.1",
     "posthtml-include": "1.7.4",
-    "prettier": "2.7.1",
+    "prettier": "2.8.8",
     "rimraf": "3.0.2",
     "stylelint": "14.12.0",
     "stylelint-config-prettier": "9.0.3",
